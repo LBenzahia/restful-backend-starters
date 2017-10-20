@@ -8,7 +8,6 @@ class ItemController extends Controller
 {
     //
     public function getItems(){
-<<<<<<< HEAD
       $items =  array(
         ['item_id' => 1,
         'item_content' => 'item content'],
@@ -18,16 +17,30 @@ class ItemController extends Controller
         'item_content' => 'item content'],
       );
         return response()->json($items);
-=======
+    }
 
+    public function getItem($id){
+      $items =  array(
+        ['item_id' => 1,
+        'item_content' => 'item content']
+      );
+        return response()->json($item);
+    }
+
+    public function createItem(){
+      
         return response()->json([
-          ['item_id' => 1,
-          'item_content' => 'item content'],
-          ['item_id' => 2,
-          'item_content' => 'item content'],
-          ['item_id' => 3,
-          'item_content' => 'item content'],
+          "msg" => "sucess created",
         ]);
->>>>>>> fd3e0e66ebab6fe6061d4dfbbe3f1cf620123ab4
+    }
+    public function updateItem($id){
+
+        return response()->json(["msg" => " sucess updated"]);
+    }
+
+    public function deleteItem($id)
+    {
+      # code...
+      return response()->json(["msg" => " sucess deleted"]);
     }
 }
