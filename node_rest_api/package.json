@@ -1,0 +1,11 @@
+{
+  "name": "node_rest_api",
+  "version": "1.0.0",
+  "description": "nodejs backend restful api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LBenzahia",
+  "license": "MIT"
+}
